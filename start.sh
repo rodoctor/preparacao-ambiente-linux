@@ -17,9 +17,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/rodoctor/preparacao-ambien
 # Desativar suspensao de energia
 read -p "Deseja desativar suspensão de energia ao fechar a tampa? (s/N): " opcao
 opcao=$(echo "$opcao" | tr '[:upper:]' '[:lower:]')
-if [ "$opcao" = "S" ]; then
+
+if [ "$opcao" = "s" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/rodoctor/preparacao-ambiente-linux/refs/heads/main/config_lid_switch_disable.sh)"
-elif [ "$opcao" = "N" ]; then
+elif [ "$opcao" = "n" ] || [ -z "$opcao" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/rodoctor/preparacao-ambiente-linux/refs/heads/main/config_lid_switch_enable.sh)"
 else
   echo "Opção inválida: $opcao"
