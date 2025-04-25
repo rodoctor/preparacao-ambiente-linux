@@ -15,4 +15,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/rodoctor/preparacao-ambiente-linux/refs/heads/main/theme_zsh.sh)"
 
 # Desativar suspensao de energia
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/rodoctor/preparacao-ambiente-linux/refs/heads/main/config_lid_switch.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/rodoctor/preparacao-ambiente-linux/refs/heads/main/config_lid_switch.sh)"
