@@ -21,5 +21,5 @@ else
 fi
 
 # Carregar as alterações sem reiniciar
-. "$ZSHRC"
+source "$ZSHRC"
 echo "Alterações aplicadas!"
