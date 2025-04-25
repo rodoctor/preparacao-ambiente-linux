@@ -2,13 +2,13 @@
 
 FILE="/etc/systemd/logind.conf"
 
-# Substituir ou descomentar HandleLidSwitch=ignore
-sudo sed -i '/^#\?HandleLidSwitch.*/c\HandleLidSwitch=ignore' "$FILE"
+# Substitui ou descomenta a linha HandleLidSwitch, garantindo que tenha o valor "ignore"
+sudo sed -i '/^#*HandleLidSwitch=.*/c\HandleLidSwitch=ignore' "$FILE"
 
-# Substituir ou descomentar HandleLidSwitchDocked=ignore
-sudo sed -i '/^#\?HandleLidSwitchDocked.*/c\HandleLidSwitchDocked=ignore' "$FILE"
+# Substitui ou descomenta a linha HandleLidSwitchDocked, garantindo que tenha o valor "ignore"
+sudo sed -i '/^#*HandleLidSwitchDocked=.*/c\HandleLidSwitchDocked=ignore' "$FILE"
 
-# Reiniciar o serviço para aplicar a alteração
+# Reinicia o serviço para aplicar as alterações
 sudo systemctl restart systemd-logind
 
 echo "Suspensão ao fechar a tampa desativada!"
