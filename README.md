@@ -1,5 +1,5 @@
 # Descrição
-Script pessoal para iniciar o ambiente de trabalho 
+Script pessoal para preparar o ambiente de trabalho 
 
 # Comando
 ```bash
